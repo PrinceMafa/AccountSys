@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @Import({LogicConfig.class})
 @ComponentScan(basePackages = {
-        "com.prince.webservices.controller",
+        "com.prince.websevices"
 })
 public class webConfig {
 }

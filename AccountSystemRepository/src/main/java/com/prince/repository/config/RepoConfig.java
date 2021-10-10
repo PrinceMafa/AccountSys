@@ -1,28 +1,16 @@
 package com.prince.repository.config;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-
-import javax.sql.DataSource;
-
-import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@EntityScan("com.prince.domain.persistence")
-@EnableJpaRepositories("com.prince.repository.repos")
-@PropertySource(value = "classpath:applicatiodb.properties")
-
+@EntityScan(basePackages = "com.prince.domain.persistence")
+@EnableJpaRepositories(basePackages = "com.prince.repository.repos")
+@PropertySource(value = "classpath:applicationdb.properties")
 public class RepoConfig {
    /* private static final String[] ENTITY_PACKAGES_TO_SCAN = {"za.ac.nwu.AccountSystem.domain.persistence"};
 
