@@ -1,0 +1,4 @@
+com\prince\websevices\config\swaggerconfig.class
+com\prince\websevices\controllers\MembersController.class
+com\prince\websevices\config\webConfig.class
+com\prince\websevices\RestApplication.class
