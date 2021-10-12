@@ -1,0 +1,8 @@
+com\prince\domain\dtos\SubtractMilesDto.class
+com\prince\domain\dtos\AddMilesDto.class
+com\prince\domain\persistence\AddMiles.class
+com\prince\domain\dtos\MemberDto.class
+com\prince\domain\dtos\ViewMiles.class
+com\prince\domain\persistence\ViewMiles.class
+com\prince\domain\persistence\Member.class
+com\prince\domain\persistence\SubtractMiles.class
